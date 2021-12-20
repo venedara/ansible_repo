@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: I want to ping nodes
+    ping:
+  - name: I want to install tree
+    apt:
+     name: tree
+     state: present
