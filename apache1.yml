@@ -5,4 +5,4 @@
   - name: i want to install apache2
     apt:
      name: apache2
-     state: present
+     state222: present
