@@ -4,5 +4,5 @@
   tasks:
   - name: i want to install apache2
     apt:
-     name: apache2
-     state222: present
+     name: apache21
+     state: present
