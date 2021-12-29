@@ -8,8 +8,5 @@
   copy:
   become: yes
     src: /tmp/jenkins.war
-    dest: /opt/tomcat/apache-tomcat-8.5.5/webapps/
-    owner: tomcat
-    group: tomcat
-    mode: 0755
-    
+    dest: /opt/tomcat/apache-tomcat-8.5.5/webapps
+   
