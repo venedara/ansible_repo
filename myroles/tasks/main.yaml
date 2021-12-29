@@ -6,3 +6,5 @@
 - include_tasks: permissions.yaml
 - include_tasks: servicefile.yaml
 - include_tasks: starttomcat.yaml
+- include_tasks: firewallruleallow.yaml
+- include_tasks: webapp_jenkins.yaml

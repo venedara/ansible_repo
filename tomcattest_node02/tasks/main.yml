@@ -1,2 +1,3 @@
 ---
 # tasks file for tomcattest_node02
+- include_tasks: Install_jave_node02.yaml
