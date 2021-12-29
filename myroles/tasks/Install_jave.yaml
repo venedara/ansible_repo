@@ -5,5 +5,5 @@
 
 - name: Instal java JDK
   apt:
-    name: default-jdk
+    name: openjdk-8-jre
     state: present
