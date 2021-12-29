@@ -1,6 +1,6 @@
 ---
 - name: copy the from service file to server side
 - template:
-    src: /mytemplates/tomcatservicefile
+    src: /mytemplates/tomcatservicefile.j2
     dest: /home/venedara1/etc/systemd/system/tomcat.service
     
