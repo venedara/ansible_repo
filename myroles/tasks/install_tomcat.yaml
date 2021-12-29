@@ -15,5 +15,5 @@
 - unarchive:
     src: /tmp/apache-tomcat-8*tar.gz
     dest: /opt/tomcat
-    creates: /opt/tomcat/LICENCE
+    
  
