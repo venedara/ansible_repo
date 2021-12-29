@@ -1,0 +1,12 @@
+---
+- hosts: 192.168.0.109
+  become: yes
+  tasks:
+  - name:  
+    apt:
+      update_cache: yes
+
+  - name: Instal java JDK
+    apt:
+      name: default-jdk
+      state: present
