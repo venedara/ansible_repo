@@ -11,10 +11,11 @@
     path: /opt/tomcat
     state: directory
     
-- unarchive:
-    src: /tmp/apache-tomcat-8*tar.gz
+- name: Extract foo.tgz into /var/lib/foo
+  unarchive:
+    src: /tmp/apache-tomcat-8.5.5.tar.gz
     dest: /opt/tomcat
-    remote_src: True
+    remote_src: yes
     creates: /opt/tomcat/LICENCE
     
  
