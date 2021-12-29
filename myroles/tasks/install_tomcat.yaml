@@ -14,5 +14,7 @@
 - unarchive:
     src: /tmp/apache-tomcat-8*tar.gz
     dest: /opt/tomcat
+    remote_src: True
+    creates: /opt/tomcat/LICENCE
     
  
