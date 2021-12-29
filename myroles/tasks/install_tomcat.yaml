@@ -11,7 +11,6 @@
     path: /opt/tomcat
     state: directory
     
-- name: Extract the tomcat var file in to opt/tomcat directory
 - unarchive:
     src: /tmp/apache-tomcat-8*tar.gz
     dest: /opt/tomcat
