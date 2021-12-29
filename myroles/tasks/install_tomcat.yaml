@@ -3,7 +3,7 @@
 - name: Download tomcat gip file
   get_url:
     url: https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.5/bin/apache-tomcat-8.5.5.tar.gz
-    dest: sudo /home/venedara1/tmp/apache-tomcat-8.5.5.tar.gz
+    dest: sudo /tmp/apache-tomcat-8.5.5.tar.gz
     force_basic_auth: yes
 
 - name: create directory
