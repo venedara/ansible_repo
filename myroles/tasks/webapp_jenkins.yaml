@@ -9,4 +9,5 @@
   copy:
     src: /tmp/jenkins.war
     dest: /opt/tomcat/apache-tomcat-8.5.5/webapps
+    remote_src: yes
    
