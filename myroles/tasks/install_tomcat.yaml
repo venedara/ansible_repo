@@ -3,16 +3,16 @@
 - name: Download tomcat gip file
   get_url:
     url: https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.5/bin/apache-tomcat-8.5.5.tar.gz
-    dest: sudo /tmp/apache-tomcat-8.5.5.tar.gz
+    dest: /tmp/apache-tomcat-8.5.5.tar.gz
     force_basic_auth: yes
 
 - name: create directory
   file:
-    path: /home/venedara1/opt/tomcat
+    path: /opt/tomcat
     state: directory
     mode: '0755'
 
 - name: Extract the tomcat var file in to opt/tomcat directory
   command: 
-    cmd: sudo tar xzvf /home/venedara1/tmp/apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1
-    creates: /home/venedara1/opt/tomcat/LICENCE
+    cmd: sudo tar xzvf /tmp/apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1
+    creates: /opt/tomcat/LICENCE
