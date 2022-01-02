@@ -1,5 +1,5 @@
 ---
-- hosts: 192.168.0.105
+- hosts: [mywebservers]
   become: yes
   roles:
   - {role: myroles_01 , when: ansible_os_family=="Debian"}
