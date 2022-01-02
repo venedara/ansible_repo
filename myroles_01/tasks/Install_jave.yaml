@@ -3,7 +3,21 @@
   apt:
     update_cache: yes
 
+- name: Instal java Jre
+  apt:
+    name: default-jre
+    state: absent
+
+
 - name: Instal java JDK
   apt:
-    name: default-jdk
+    name: openjdk-8-jdk
     state: present
+
+- name: Instal java Jre
+  apt:
+    name: openjdk-8-jre
+    state: present
+
+
+
