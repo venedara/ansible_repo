@@ -1,0 +1,16 @@
+---
+- name: copy user details  host management details.
+  template:
+     src: mytemplates/tomcatuser.j2
+     dest: /opt/tomcat/conf/tomcat-users.xml
+
+
+- name: copy  web managanet 
+  template:
+     src: mytemplates/tomcatwebmanagement.j2
+     dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+
+- name: copy  host management details.
+  template:
+     src: mytemplates/tomcathostmanament.j2
+     dest: /opt/tomcat/conf/tomcat-users.xml
